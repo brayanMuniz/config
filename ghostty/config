@@ -1,0 +1,13 @@
+theme = catppuccin-mocha
+background-opacity = .88
+background = #000000
+macos-titlebar-style = hidden
+window-decoration = false
+font-size = 12.5
+
+
+
+
+
+
+

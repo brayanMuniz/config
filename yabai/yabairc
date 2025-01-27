@@ -1,0 +1,48 @@
+# To start: yabai --start-service
+# To restart: yabai --restart-service
+# To stop : yabai --stop-service
+
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^Anki$" manage=off
+yabai -m rule --add app="^anki$" manage=off
+yabai -m rule --add app="^Photos$" manage=off
+yabai -m rule --add app="^Finder$" manage=off
+yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Preview$" manage=off
+yabai -m rule --add app="^Surfshark$" manage=off
+yabai -m rule --add app="^Arc$" manage=off
+yabai -m rule --add app="^Microsoft Outlook$" manage=off
+yabai -m rule --add app="^Chrome$" manage=off
+yabai -m rule --add app="^Discord$" manage=off
+yabai -m rule --add app="^sioyek$" manage=off
+yabai -m rule --add app="^Firefox$" manage=off
+yabai -m rule --add app="^firefox$" manage=off
+
+
+# default layout (can be bsp, stack or float)
+yabai -m config layout bsp
+
+# New window spawns to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+
+# Adjust padding to create margins at the bottom and right side
+yabai -m config top_padding 0
+yabai -m config bottom_padding 400 # Increase to add more margin at the bottom
+yabai -m config left_padding 550  
+yabai -m config right_padding 550 # Increase to add more margin on the right
+yabai -m config window_gap 2
+
+# center mouse on window with focus
+yabai -m config mouse_follows_focus on
+
+# modifier for clicking and dragging with mouse
+yabai -m config mouse_modifier alt
+# set modifier + left-click drag to move window
+yabai -m config mouse_action1 move
+# set modifier + right-click drag to resize window
+yabai -m config mouse_action2 resize
+
+# when window is dropped in center of another window, swap them (on edges it will split it)
+yabai -m mouse_drop_action swap
